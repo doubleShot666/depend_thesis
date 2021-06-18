@@ -1,0 +1,35 @@
+65.4632,9095.74,0,1535.31,0,10631.1,994.89
+
+ Performance counter stats for './p3arsec/bin/parsecmgmt -a run -p streamcluster -c gcc-pthreads -i native -n 53':
+
+               138      sched:sched_process_free
+             1,737      sched:sched_process_exit
+             2,116      sched:sched_process_wait
+             1,736      sched:sched_process_fork
+               706      sched:sched_process_exec
+                 0      sched:sched_process_hang
+             1,736      task:task_newtask
+               727      task:task_rename
+ 1,116,962,682,361      L1-dcache-loads                                               (0.03%)
+   102,070,175,289      L1-dcache-load-misses     #    9.11% of all L1-dcache hits    (0.03%)
+ 5,122,723,249,853      cycles                                                        (0.03%)
+         7,914,707      cs
+           388,556      faults
+            57,605      migrations
+ 1,123,692,224,235      L1-dcache-loads                                               (0.04%)
+    99,396,927,204      L1-dcache-load-misses     #    8.87% of all L1-dcache hits    (0.04%)
+    25,501,082,392      LLC-loads                                                     (0.04%)
+     2,802,275,223      LLC-load-misses           #   10.99% of all LL-cache hits     (0.04%)
+   <not supported>      L1-icache-loads
+    28,437,761,934      L1-icache-load-misses                                         (0.03%)
+ 1,102,846,342,042      dTLB-loads                                                    (0.03%)
+     5,325,107,779      dTLB-load-misses          #    0.48% of all dTLB cache hits   (0.03%)
+     2,064,995,071      iTLB-loads                                                    (0.03%)
+     3,595,511,129      iTLB-load-misses          #  174.12% of all iTLB cache hits   (0.03%)
+   <not supported>      L1-dcache-prefetches
+   <not supported>      L1-dcache-prefetch-misses
+
+      67.941296366 seconds time elapsed
+
+    1987.462091000 seconds user
+     198.308471000 seconds sys

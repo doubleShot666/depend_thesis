@@ -1,0 +1,24 @@
+# started on Mon Apr 19 16:43:29 2021
+
+
+ Performance counter stats for './run':
+
+      2,694,780.27 msec task-clock                #   45.569 CPUs utilized          
+           167,019      context-switches          #    0.062 K/sec                  
+               645      cpu-migrations            #    0.000 K/sec                  
+            14,129      page-faults               #    0.005 K/sec                  
+ 5,290,485,701,419      cycles                    #    1.963 GHz                      (0.00%)
+ 3,171,993,162,491      instructions              #    0.60  insn per cycle           (0.00%)
+   724,583,282,111      branches                  #  268.884 M/sec                    (0.00%)
+    31,049,688,742      branch-misses             #    4.29% of all branches          (0.00%)
+   843,205,326,981      L1-dcache-loads           #  312.903 M/sec                    (0.00%)
+    38,221,819,254      L1-dcache-load-misses     #    4.53% of all L1-dcache hits    (0.00%)
+     8,863,634,049      LLC-loads                 #    3.289 M/sec                    (0.00%)
+     1,918,514,695      LLC-load-misses           #   21.64% of all LL-cache hits     (0.00%)
+
+      59.136750978 seconds time elapsed
+
+    2635.003577000 seconds user
+      58.824991000 seconds sys
+
+

@@ -1,0 +1,42 @@
+# Makefile for the PARSEC hooks library
+#
+# Copyright (C) 2006-2009 by Princeton University
+# Author: Christian Bienia
+
+PREFIX=${PARSECDIR}/pkgs/libs/hooks/inst/${PARSECPLAT}
+
+LIBTOOL=${PARSECDIR}/pkgs/tools/libtool/inst/${PARSECPLAT}/bin/libtool
+
+INCLUDEDIR=include
+TARGET=libhooks.la
+OBJS=hooks_cu.so MeterPUWrapper.lo hooks.lo
+
+
+
+all: $(OBJS)
+	$(LIBTOOL) --mode=link $(CXX) $(CXXFLAGS) $(OBJS) -L/usr/local/cuda-11.2/targets/x86_64-linux/lib -L/home/sd272/pcm -lpcm -o $(TARGET) -lnvidia-ml -lcudart -rpath $(PREFIX)/lib
+
+hooks_cu.so : hooks.cu
+	nvcc -c --shared -o hooks_cu.so -I/home/sd272/deploy/p3arsec/pkgs/libs/mammut -I/home/sd272/deploy/p3arsec/pkgs/libs/tbblib/inst/amd64-linux.gcc-tbb/include -L/home/sd272/deploy/p3arsec/pkgs/libs/mammut/mammut -lmammut $<
+
+
+hooks.lo : hooks.c
+	$(LIBTOOL) --mode=compile $(CXX) $(CXXFLAGS) -L/usr/local/cuda-11.2/targets/x86_64-linux/include/lib/stubs/lib -lnvidia-ml -Wall -D_GNU_SOURCE -D_XOPEN_SOURCE=600 -c $<
+
+MeterPUWrapper.lo : MeterPUWrapper.cpp
+	$(LIBTOOL) --mode=compile $(CXX) $(CXXFLAGS) -fexceptions -I/home/sd272/meterPU/meterpu_0.81 -I/usr/local/cuda-11.2/targets/x86_64-linux/include/ -L/usr/local/cuda-11.2/targets/x86_64-linux/include/lib/stubs/lib -lnvidia-ml -I/home/sd272/pcm -L/home/sd272/pcm -Wall -DENABLE_PCM -DENABLE_CUDA_TIME -DENABLE_NVML -D_GNU_SOURCE -D_XOPEN_SOURCE=600 -c $<
+
+clean:
+	$(LIBTOOL) --mode=clean rm -f $(OBJS)
+	$(LIBTOOL) --mode=clean rm -f $(TARGET)
+
+install:
+	mkdir -p $(PREFIX)/include
+	install -c $(INCLUDEDIR)/* $(PREFIX)/include
+	mkdir -p $(PREFIX)/lib
+	$(LIBTOOL) --mode=install install -c $(TARGET) $(PREFIX)/lib
+	$(LIBTOOL) --mode=finish $(PREFIX)/lib
+
+.PHONY: all install
+
+

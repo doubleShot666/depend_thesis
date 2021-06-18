@@ -1,0 +1,54 @@
+Linux arch_perfmon flag  : yes
+IBRS and IBPB supported  : no
+STIBP supported          : no
+Spec arch caps supported : no
+Number of physical cores: 28
+Number of logical cores: 56
+Number of online logical cores: 56
+Threads (logical cores) per physical core: 2
+Num sockets: 2
+Physical cores per socket: 14
+Last level cache slices per socket: 14
+Core PMU (perfmon) version: 3
+Number of core PMU generic (programmable) counters: 4
+Width of generic (programmable) counters: 48 bits
+Number of core PMU fixed counters: 3
+Width of fixed counters: 48 bits
+Nominal core frequency: 2600000000 Hz
+Package thermal spec power: 135 Watt; Package minimum power: 55 Watt; Package maximum power: 270 Watt;
+INFO: Linux perf interface to program uncore PMUs is present
+Socket 0: 2 memory controllers detected with total number of 4 channels. 2 QPI ports detected. 0 M2M (mesh to memory) blocks detected. 2 Home Agents detected. 0 M3UPI blocks detected.
+Socket 1: 2 memory controllers detected with total number of 4 channels. 2 QPI ports detected. 0 M2M (mesh to memory) blocks detected. 2 Home Agents detected. 0 M3UPI blocks detected.
+Trying to use Linux perf events...
+Successfully programmed on-core PMU using Linux perf
+Socket 0
+Max QPI link 0 speed: 19.2 GBytes/second (9.6 GT/second)
+Max QPI link 1 speed: 19.2 GBytes/second (9.6 GT/second)
+Socket 1
+Max QPI link 0 speed: 19.2 GBytes/second (9.6 GT/second)
+Max QPI link 1 speed: 19.2 GBytes/second (9.6 GT/second)
+PARSEC Benchmark Suite
+[HOOKS] PARSEC Hooks Version 1.2
+Num of Options: 10000000
+Num of Runs: 100
+Size of data: 400000000
+Threads,Time,JoulesCpuAll,JoulesCoresAll,JoulesDramAll,JoulesGraphicAll,PCM_energy,NVML_Energy
+0.330735,11.9717,0,3.91865,0,15.8814,9.2342
+0.00781703,0.34613,0,0.096359,0,0.585041,0
+0.0080719,0.370238,0,0.107192,0,0.716113,0
+0.00773191,0.353514,0,0.099618,0,0.76621,0
+0.00771499,0.35858,0,0.098486,0,0.568992,0
+0.00788498,0.350158,0,0.098134,0,0.708734,0
+0.008111,0.37097,0,0.107529,0,1.0006,0
+0.00792193,0.348938,0,0.100934,0,0.815373,0
+0.00773382,0.349975,0,0.099512,0,0.757189,0
+0.0081408,0.356811,0,0.098196,0,0.781648,0
+[HOOKS] Total time spent in ROI: 0.008s
+[HOOKS] Terminating
+Cleaning up
+ Zeroed uncore PMU registers
+ Freeing up all RMIDs
+
+real	0m41.506s
+user	0m32.425s
+sys	0m8.802s

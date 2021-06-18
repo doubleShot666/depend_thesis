@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+# gcc-ff-nornir.bldconf - file containing global information necessary to build
+#                  PARSEC with gcc, FastFlow and nornir
+#
+# Copyright (C) 2008 Princeton University
+# Written by Christian Bienia
+
+source ${PARSECDIR}/config/gcc.bldconf
+
+BLOCKING="-DNO_DEFAULT_MAPPING"
+FFDIR=${PARSECDIR}/pkgs/libs/fastflow
+
+CFLAGS="${CFLAGS} ${BLOCKING} -I${FFDIR}"
+CXXFLAGS="--std=c++11 ${CXXFLAGS} ${BLOCKING} -fexceptions -I${FFDIR}"
+LIBS="${LIBS} -pthread -lnornir -lriff"

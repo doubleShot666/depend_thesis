@@ -1,0 +1,27 @@
+Time,JoulesCpuAll,JoulesCoresAll,JoulesDramAll,JoulesGraphicAll,PCM_energy,NVML_Energy
+9.55231,2229.94,0,189.196,0,2419.28,0
+
+# started on Mon Apr 19 13:51:08 2021
+
+
+ Performance counter stats for 'p3arsec/bin/parsecmgmt -a run -p ferret -c gcc-tbb -i native -n 55':
+
+        483,761.62 msec task-clock                #   34.455 CPUs utilized          
+           205,095      context-switches          #    0.424 K/sec                  
+             6,659      cpu-migrations            #    0.014 K/sec                  
+           425,809      page-faults               #    0.880 K/sec                  
+   747,850,586,172      cycles                    #    1.546 GHz                      (0.47%)
+   595,732,695,227      instructions              #    0.80  insn per cycle           (0.55%)
+   119,269,330,366      branches                  #  246.546 M/sec                    (0.54%)
+     3,455,529,141      branch-misses             #    2.90% of all branches          (0.54%)
+   170,565,593,835      L1-dcache-loads           #  352.582 M/sec                    (0.54%)
+     9,879,746,359      L1-dcache-load-misses     #    5.79% of all L1-dcache hits    (0.54%)
+     2,853,704,835      LLC-loads                 #    5.899 M/sec                    (0.38%)
+       451,882,766      LLC-load-misses           #   15.83% of all LL-cache hits     (0.38%)
+
+      14.040392372 seconds time elapsed
+
+     467.941348000 seconds user
+      15.120232000 seconds sys
+
+

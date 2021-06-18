@@ -1,0 +1,189 @@
+# started on Mon Apr 19 13:16:48 2021
+
+
+ Performance counter stats for 'p3arsec/bin/parsecmgmt -a run -p facesim -c gcc-ff -i native -n 1':
+
+        567,491.64 msec task-clock                #    1.978 CPUs utilized          
+            93,673      context-switches          #    0.165 K/sec                  
+             2,278      cpu-migrations            #    0.004 K/sec                  
+           628,540      page-faults               #    0.001 M/sec                  
+   797,455,746,948      cycles                    #    1.405 GHz                      (0.41%)
+   646,461,111,316      instructions              #    0.81  insn per cycle           (0.49%)
+   130,129,272,914      branches                  #  229.306 M/sec                    (0.49%)
+     3,705,322,618      branch-misses             #    2.85% of all branches          (0.49%)
+   181,093,949,583      L1-dcache-loads           #  319.113 M/sec                    (0.48%)
+    11,224,880,997      L1-dcache-load-misses     #    6.20% of all L1-dcache hits    (0.48%)
+     3,225,226,015      LLC-loads                 #    5.683 M/sec                    (0.32%)
+       612,321,110      LLC-load-misses           #   18.99% of all LL-cache hits     (0.33%)
+
+     286.838425583 seconds time elapsed
+
+     282.325996000 seconds user
+     282.970442000 seconds sys
+
+# started on Mon Apr 19 13:13:19 2021
+
+
+ Performance counter stats for 'p3arsec/bin/parsecmgmt -a run -p facesim -c gcc-ff -i native -n 2':
+
+        442,818.69 msec task-clock                #    2.812 CPUs utilized
+           256,232      context-switches          #    0.579 K/sec
+             2,133      cpu-migrations            #    0.005 K/sec
+           563,324      page-faults               #    0.001 M/sec
+   624,931,731,805      cycles                    #    1.411 GHz                      (0.51%)
+   502,981,413,900      instructions              #    0.80  insn per cycle           (0.61%)
+   100,732,710,353      branches                  #  227.481 M/sec                    (0.61%)
+     2,980,509,104      branch-misses             #    2.96% of all branches          (0.62%)
+   141,896,457,892      L1-dcache-loads           #  320.439 M/sec                    (0.62%)
+     8,695,540,725      L1-dcache-load-misses     #    6.13% of all L1-dcache hits    (0.61%)
+     2,597,889,267      LLC-loads                 #    5.867 M/sec                    (0.40%)
+       487,760,354      LLC-load-misses           #   18.78% of all LL-cache hits     (0.40%)
+
+     157.464971289 seconds time elapsed
+
+     285.926888000 seconds user
+     156.040471000 seconds sys
+
+
+# started on Mon Apr 19 13:11:03 2021
+
+
+ Performance counter stats for 'p3arsec/bin/parsecmgmt -a run -p facesim -c gcc-ff -i native -n 3':
+
+        404,664.02 msec task-clock                #    3.507 CPUs utilized
+           310,174      context-switches          #    0.766 K/sec
+             2,280      cpu-migrations            #    0.006 K/sec
+           555,122      page-faults               #    0.001 M/sec
+   578,042,200,694      cycles                    #    1.428 GHz                      (0.55%)
+   464,248,259,101      instructions              #    0.80  insn per cycle           (0.66%)
+    93,148,215,586      branches                  #  230.187 M/sec                    (0.65%)
+     2,840,865,963      branch-misses             #    3.05% of all branches          (0.66%)
+   129,608,556,646      L1-dcache-loads           #  320.287 M/sec                    (0.67%)
+     7,792,318,415      L1-dcache-load-misses     #    6.01% of all L1-dcache hits    (0.68%)
+     2,437,634,936      LLC-loads                 #    6.024 M/sec                    (0.46%)
+       448,047,046      LLC-load-misses           #   18.38% of all LL-cache hits     (0.44%)
+
+     115.383447718 seconds time elapsed
+
+     289.683180000 seconds user
+     114.464836000 seconds sys
+
+
+# started on Mon Apr 19 13:08:47 2021
+
+
+ Performance counter stats for 'p3arsec/bin/parsecmgmt -a run -p facesim -c gcc-ff -i native -n 4':
+
+        385,495.48 msec task-clock                #    4.158 CPUs utilized
+           367,441      context-switches          #    0.953 K/sec
+             2,229      cpu-migrations            #    0.006 K/sec
+           520,032      page-faults               #    0.001 M/sec
+   549,785,719,454      cycles                    #    1.426 GHz                      (0.60%)
+   437,992,472,437      instructions              #    0.80  insn per cycle           (0.71%)
+    87,560,344,154      branches                  #  227.137 M/sec                    (0.71%)
+     2,574,323,652      branch-misses             #    2.94% of all branches          (0.70%)
+   123,036,157,835      L1-dcache-loads           #  319.164 M/sec                    (0.70%)
+     7,470,588,668      L1-dcache-load-misses     #    6.07% of all L1-dcache hits    (0.71%)
+     2,235,860,594      LLC-loads                 #    5.800 M/sec                    (0.48%)
+       412,422,762      LLC-load-misses           #   18.45% of all LL-cache hits     (0.48%)
+
+      92.721454886 seconds time elapsed
+
+     292.913552000 seconds user
+      92.353663000 seconds sys
+
+
+# started on Mon Apr 19 13:07:10 2021
+
+
+ Performance counter stats for 'p3arsec/bin/parsecmgmt -a run -p facesim -c gcc-ff -i native -n 6':
+
+        362,849.52 msec task-clock                #    5.191 CPUs utilized
+           487,720      context-switches          #    0.001 M/sec
+             2,457      cpu-migrations            #    0.007 K/sec
+           506,278      page-faults               #    0.001 M/sec
+   524,698,788,101      cycles                    #    1.446 GHz                      (0.61%)
+   420,691,638,280      instructions              #    0.80  insn per cycle           (0.73%)
+    84,181,197,920      branches                  #  232.000 M/sec                    (0.74%)
+     2,538,421,327      branch-misses             #    3.02% of all branches          (0.75%)
+   115,278,685,970      L1-dcache-loads           #  317.704 M/sec                    (0.75%)
+     6,966,753,434      L1-dcache-load-misses     #    6.04% of all L1-dcache hits    (0.76%)
+     2,215,789,884      LLC-loads                 #    6.107 M/sec                    (0.51%)
+       394,773,209      LLC-load-misses           #   17.82% of all LL-cache hits     (0.49%)
+
+      69.903059531 seconds time elapsed
+
+     292.947562000 seconds user
+      69.918992000 seconds sys
+
+
+# started on Mon Apr 19 12:34:09 2021
+
+
+ Performance counter stats for 'p3arsec/bin/parsecmgmt -a run -p facesim -c gcc-ff -i native -n 8':
+
+        352,674.03 msec task-clock                #    6.137 CPUs utilized
+           626,772      context-switches          #    0.002 M/sec
+             2,412      cpu-migrations            #    0.007 K/sec
+           471,812      page-faults               #    0.001 M/sec
+   550,247,356,567      cycles                    #    1.560 GHz                      (0.61%)
+   436,947,140,134      instructions              #    0.79  insn per cycle           (0.72%)
+    88,814,386,685      branches                  #  251.831 M/sec                    (0.69%)
+     2,532,171,043      branch-misses             #    2.85% of all branches          (0.69%)
+   123,563,432,893      L1-dcache-loads           #  350.362 M/sec                    (0.70%)
+     7,446,022,928      L1-dcache-load-misses     #    6.03% of all L1-dcache hits    (0.72%)
+     2,267,843,172      LLC-loads                 #    6.430 M/sec                    (0.51%)
+       398,678,406      LLC-load-misses           #   17.58% of all LL-cache hits     (0.49%)
+
+      57.469025959 seconds time elapsed
+
+     295.116636000 seconds user
+      57.917317000 seconds sys
+
+
+# started on Mon Apr 19 13:05:49 2021
+
+
+ Performance counter stats for 'p3arsec/bin/parsecmgmt -a run -p facesim -c gcc-ff -i native -n 16':
+
+        348,129.78 msec task-clock                #    8.954 CPUs utilized
+         1,197,468      context-switches          #    0.003 M/sec
+             3,146      cpu-migrations            #    0.009 K/sec
+           456,141      page-faults               #    0.001 M/sec
+   500,901,901,713      cycles                    #    1.439 GHz                      (0.65%)
+   402,289,303,297      instructions              #    0.80  insn per cycle           (0.78%)
+    81,390,545,683      branches                  #  233.794 M/sec                    (0.77%)
+     2,360,102,845      branch-misses             #    2.90% of all branches          (0.77%)
+   112,353,929,398      L1-dcache-loads           #  322.736 M/sec                    (0.78%)
+     6,719,446,669      L1-dcache-load-misses     #    5.98% of all L1-dcache hits    (0.79%)
+     2,100,525,732      LLC-loads                 #    6.034 M/sec                    (0.52%)
+       388,530,616      LLC-load-misses           #   18.50% of all LL-cache hits     (0.52%)
+
+      38.878409803 seconds time elapsed
+
+     307.351198000 seconds user
+      42.422609000 seconds sys
+
+
+# started on Mon Apr 19 02:44:56 2021
+
+
+ Performance counter stats for 'p3arsec/bin/parsecmgmt -a run -p facesim -c gcc-ff -i native -n 32':
+
+        408,002.78 msec task-clock                #   12.427 CPUs utilized
+         2,167,161      context-switches          #    0.005 M/sec
+             5,484      cpu-migrations            #    0.013 K/sec
+           444,192      page-faults               #    0.001 M/sec
+   582,679,189,683      cycles                    #    1.428 GHz                      (0.54%)
+   472,755,672,878      instructions              #    0.81  insn per cycle           (0.66%)
+    95,209,421,701      branches                  #  233.355 M/sec                    (0.66%)
+     2,713,202,213      branch-misses             #    2.85% of all branches          (0.67%)
+   131,110,483,044      L1-dcache-loads           #  321.347 M/sec                    (0.67%)
+     8,056,097,381      L1-dcache-load-misses     #    6.14% of all L1-dcache hits    (0.66%)
+     2,421,690,284      LLC-loads                 #    5.935 M/sec                    (0.43%)
+       444,257,763      LLC-load-misses           #   18.34% of all LL-cache hits     (0.43%)
+
+      32.832024410 seconds time elapsed
+
+     370.656259000 seconds user
+      41.367431000 seconds sys

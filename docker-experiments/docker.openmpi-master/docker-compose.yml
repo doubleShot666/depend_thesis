@@ -1,0 +1,50 @@
+version: "2.3"
+services:
+  mpi_head:
+    build: .
+    ports:
+      - "22"
+    links:
+      - mpi_node
+    volumes:
+      - "/sys/firmware/acpi/tables/MCFG:/pcm/sys/firmware/acpi/tables/MCFG:ro"
+      - "/proc/bus/pci/:/pcm/proc/bus/pci/"
+      - "/proc/sys/kernel/nmi_watchdog:/pcm/proc/sys/kernel/nmi_watchdog"
+    cap_add:
+      - SYS_ADMIN
+      - SYS_RAWIO
+    devices:
+      - /dev/cpu
+      - /dev/mem
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ['0']
+              capabilities: [gpu]
+
+  mpi_node:
+    build: .
+    volumes:
+      - "/sys/firmware/acpi/tables/MCFG:/pcm/sys/firmware/acpi/tables/MCFG:ro"
+      - "/proc/bus/pci/:/pcm/proc/bus/pci/"
+      - "/proc/sys/kernel/nmi_watchdog:/pcm/proc/sys/kernel/nmi_watchdog"
+    cap_add:
+      - SYS_ADMIN
+      - SYS_RAWIO
+    devices:
+      - /dev/cpu
+      - /dev/mem
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ['1']
+              capabilities: [gpu]
+
+#  driver:
+#    image: nvidia/cuda:11.2.0-devel-ubuntu16.04
+#    command: nvidia-smi
+#    runtime: nvidia

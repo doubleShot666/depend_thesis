@@ -1,0 +1,27 @@
+Time,JoulesCpuAll,JoulesCoresAll,JoulesDramAll,JoulesGraphicAll,PCM_energy,GPU_energy
+321.51,25640.3,0,5679.24,0,31319.8,4773.34
+
+# started on Mon Apr 19 13:56:00 2021
+
+
+ Performance counter stats for 'p3arsec/bin/parsecmgmt -a run -p streamcluster -c gcc-ff -i native -n 1':
+
+        647,261.93 msec task-clock                #    1.989 CPUs utilized          
+            97,441      context-switches          #    0.151 K/sec                  
+             2,261      cpu-migrations            #    0.003 K/sec                  
+           419,165      page-faults               #    0.648 K/sec                  
+   931,315,422,061      cycles                    #    1.439 GHz                      (0.27%)
+   722,713,959,963      instructions              #    0.78  insn per cycle           (0.34%)
+   145,975,650,223      branches                  #  225.528 M/sec                    (0.34%)
+     4,696,046,871      branch-misses             #    3.22% of all branches          (0.35%)
+   199,985,457,684      L1-dcache-loads           #  308.971 M/sec                    (0.36%)
+    11,041,627,910      L1-dcache-load-misses     #    5.52% of all L1-dcache hits    (0.36%)
+     3,734,942,127      LLC-loads                 #    5.770 M/sec                    (0.23%)
+       508,773,024      LLC-load-misses           #   13.62% of all LL-cache hits     (0.22%)
+
+     325.385449894 seconds time elapsed
+
+     321.981618000 seconds user
+     322.821540000 seconds sys
+
+

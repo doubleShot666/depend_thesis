@@ -1,0 +1,27 @@
+read 200000 points
+finish local search
+time = 19.562215s
+cpu_energy = 1925.542840j
+gpu_energy = 636.591303j
+
+time = 20.222851s
+cpu_energy = 2246.637574j
+gpu_energy = 562.407942j
+
+
+time pgain = 0.000000s
+time pgain_dist = 0.000000s
+time pgain_init = 0.000000s
+time pselect = 0.000717s
+time pspeedy = 1.407202s
+time pshuffle = 0.017724s
+time localSearch = 18.187520s
+
+
+====CUDA Timing info (pgain)====
+time serial = 7.459069s
+time CPU to GPU memory copy = 1.523328s
+time GPU to CPU memory copy back = 1.374766s
+time GPU malloc = 0.858079s
+time GPU free = 0.568379s
+time kernel = 4.604664s

@@ -1,0 +1,23 @@
+time,cpu_energy,gpu_energy
+read 200000 points
+finish local search
+16023.680634,1589.572807,0.000000
+17188.397165,1995.396797,0.000000
+
+time = 16.043291
+time pgain = 0.000000
+time pgain_dist = 0.000000
+time pgain_init = 0.000000
+time pselect = 0.000646
+time pspeedy = 1.398583
+time pshuffle = 0.017532
+time FL = 13.946824
+time localSearch = 15.424591
+
+====GPU Timing info====
+time serial = 0.000000
+time CPU to GPU memory copy = 0.000000
+time GPU to CPU memory copy back = 0.000000
+time GPU malloc = 0.000000
+time GPU free = 0.003213
+time kernel = 0.000000

@@ -1,0 +1,36 @@
+22.6729,3521.57,0,737.221,0,4258.9,324.408
+
+
+ Performance counter stats for './p3arsec/bin/parsecmgmt -a run -p streamcluster -c gcc-tbb -i native -n 53':
+
+               170      sched:sched_process_free
+             1,474      sched:sched_process_exit
+             2,116      sched:sched_process_wait
+             1,473      sched:sched_process_fork
+               706      sched:sched_process_exec
+                 0      sched:sched_process_hang
+             1,473      task:task_newtask
+               727      task:task_rename
+   440,804,825,559      L1-dcache-loads                                               (0.07%)
+    39,757,953,149      L1-dcache-load-misses     #    8.98% of all L1-dcache hits    (0.07%)
+ 2,079,143,075,140      cycles                                                        (0.09%)
+           532,344      cs
+           381,011      faults
+             3,618      migrations
+   444,417,440,181      L1-dcache-loads                                               (0.10%)
+    39,624,227,090      L1-dcache-load-misses     #    8.95% of all L1-dcache hits    (0.10%)
+    10,327,268,867      LLC-loads                                                     (0.09%)
+     1,189,617,778      LLC-load-misses           #   11.52% of all LL-cache hits     (0.09%)
+   <not supported>      L1-icache-loads
+    11,500,433,190      L1-icache-load-misses                                         (0.07%)
+   454,165,910,792      dTLB-loads                                                    (0.07%)
+     2,207,143,299      dTLB-load-misses          #    0.49% of all dTLB cache hits   (0.07%)
+       816,546,529      iTLB-loads                                                    (0.06%)
+     1,369,775,295      iTLB-load-misses          #  167.75% of all iTLB cache hits   (0.07%)
+   <not supported>      L1-dcache-prefetches
+   <not supported>      L1-dcache-prefetch-misses
+
+      25.278947773 seconds time elapsed
+
+     888.265277000 seconds user
+      52.810936000 seconds sys
